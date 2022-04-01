@@ -31,7 +31,7 @@ function Registraion() {
         
         setFormErrors(validate(users))
         setSubmit(true);
-        checkGet()
+        
     }
 
 function validate(values){
@@ -45,16 +45,18 @@ if(!values.email){
     if(!values.password){
         errors.password= "password required"
         }
-        if(!values.phone){
+      if(!values.phone){
             errors.number= "number required"
+        }
+        if(values.password <4){
+errors.password = "Password must be atleast of 4 characters"
+        }
+        if(values.password >8){
+            errors.password = "Password cant't be more than  8 characters"
         }
         return errors;
 }
-    function checkGet(e) {
-       
-        var a = localStorage.getItem("mail")
-       console.log("r3r3" +a)
-    }
+    
 useEffect(()=>{if(Object.keys(formErrors).length == 0 && submit){
 
 }},[formErrors])
@@ -102,7 +104,7 @@ useEffect(()=>{if(Object.keys(formErrors).length == 0 && submit){
                 <input type="password" placeholder="Confirm Password" ></input></span>
             </div> */}
 
-            <button type="submit" className=" sign btn btn-primary" onClick={(e) => checkGet}>Register</button>
+            <button type="submit" className=" sign btn btn-primary" >Register</button>
             <div className="register">
                         <p>Already have an account   <Link to="/">Login </Link></p>
                         
