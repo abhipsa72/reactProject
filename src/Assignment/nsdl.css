@@ -1,0 +1,256 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    background-color:#fcf8e3;
+}
+
+@media screen and (max-width: 768px){
+  .nav-bar{
+    display: none;
+  }
+  .navi{
+    float: right;
+  }
+}
+@media screen and (min-width: 768px){
+  .logo2{
+    float: right;
+ }
+  
+  .navi{
+    display:none;
+  }
+}
+.menubar{
+  padding: 0px;
+  transition: all 0.1s ease 0s;
+}
+.menubar>li{
+    display: inline-block;
+   color: #9c4b49;
+   list-style: none;
+   padding: 7px;
+   text-decoration: none;
+   transition: all 0.1s ease 0s;
+}
+.menubar>li a:hover{
+  color: #9c4b49;
+  
+}
+
+
+ .menubar>li:hover .submenu{
+color: #9c4b49;
+display: block;
+position: absolute;
+background-color: white;
+padding-right: 20px;
+border-top: solid;
+visibility: visible;
+
+}
+.submenu{
+  display: none;
+  z-index: 10;
+  visibility: hidden;
+  transition: all 0.1s  0s;
+  transition-timing-function: ease-in;
+}
+a{
+  text-decoration: none;
+  padding: 10px 7px;
+  color: black;
+  transition: all 0.1s ease 0s;
+}
+.marq{
+  background: #cc6633;
+  color: white;
+}
+.marq:hover{
+  animation-play-state: paused;            
+}
+
+
+  .nav-bar{
+    clear: both;
+  }
+  .circlspace1{
+    overflow: hidden;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+  }
+  .circlspace1:hover{
+      background-color: maroon;
+      
+  }
+  .round-img{
+      border-radius: 50%;
+      transform: translate(-10%, -10%);
+  }
+  .circular{
+      border-radius: 50%;
+      border: 1px solid #cc6633;
+      width: 120px;
+      height: 120px;
+      box-shadow: 0 0 0 5px #feebc0, 0 0 0 6px #ffc931;
+      overflow: hidden;
+      margin: auto;
+     
+  }
+  .round-area{
+      background-color:  #feebc0;
+      
+  }
+  .carousel-area {
+    height: 800px;
+    width: 900px;
+    background-size: cover;
+  }
+.ccarousel-inner{
+  height: 100%;
+  width: 100%;
+}
+  .card-header{
+      background-color:  #ffc931;
+      padding: 7px;
+      display: flex;
+      justify-content: center;
+      
+  }
+
+  .card-heading{
+      font-weight: bold;
+  }
+
+  .cards-body{
+    background-color:  #feebc0;
+    display: flex;
+    justify-content: space-around;
+flex-wrap: wrap;
+padding: 20px;
+  }
+
+  .card-1{
+    margin: 10px;
+    height: 100px;
+    width: 100px;
+    color: #FFF;
+    padding: 10px;
+    background: #62bf2e;
+    font-size: 14px !important;
+    text-align: left;
+    background-size: 60px auto;
+    line-height: normal;
+    cursor: pointer;
+  }
+  .card-2{
+    margin: 10px;
+    height: 100px;
+    width: 100px;
+    color: #FFF;
+    padding: 10px;
+    background: #009a7a ;
+    font-size: 14px !important;
+    text-align: left;
+    background-size: 60px auto;
+    line-height: normal;
+    cursor: pointer;
+  }
+  .card-3{
+    margin: 10px;
+    height: 100px;
+    width: 100px;
+    color: #FFF;
+    padding: 10px;
+    background: #fa8313 ;
+    font-size: 14px !important;
+    text-align: left;
+    background-size: 60px auto;
+    line-height: normal;
+    cursor: pointer;
+  }
+  .card-4{
+    margin: 10px;
+    height: 100px;
+    width: 100px;
+    color: #FFF;
+    padding: 10px;
+    background: maroon ;
+    font-size: 14px !important;
+    text-align: left;
+    background-size: 60px auto;
+    line-height: normal;
+    cursor: pointer;
+  }
+  .card-5{
+    margin: 10px;
+    height: 100px;
+    width: 100px;
+    color: #FFF;
+    padding: 10px;
+    background: #ea0a8e ;
+    font-size: 14px !important;
+    text-align: left;
+    background-size: 60px auto;
+    line-height: normal;
+    cursor: pointer;
+  }
+  .card-6{
+    margin: 10px;
+    height: 100px;
+    width: 100px;
+    color: #FFF;
+    padding: 10px;
+    background: #00bdf6 ;
+    font-size: 14px !important;
+    text-align: left;
+    background-size: 60px auto;
+    line-height: normal;
+    cursor: pointer;
+  }
+  .card-box{
+color: teal;
+  }
+  .sticky{ 
+    
+    top: 240px;
+    right: 0;
+    padding: 2px;
+    
+  }
+  .sticky-area{
+    padding: 0px;
+    margin: 0px;
+    position: fixed;
+    right: 0px;
+    top: 250px;
+    width: 50px;
+  }
+  ul{
+    list-style: none;
+  }
+  .sticky li{
+    background-color: white;
+    float: left;
+padding: 3px;
+border: 1px transparent;
+  }
+
+  .sticky li:hover{
+    padding: 3px;
+     border: 1px transparent;
+    margin-left: -120px;
+  }
+  footer{
+    background-color: maroon;
+    height: 50px;
+    width: 100%;
+  }
+  
+  
+  
