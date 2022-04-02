@@ -59,7 +59,7 @@ function ha(e) {
                     value={email}
                     onChange={(e) => setMail(e.target.value)}
                 ></input></span>
-                <p className='error'>{formErrors.username}</p>
+                <p className='error'>{email === "" && formErrors.username}</p>
             </div>
             
             <div className="password">
@@ -69,7 +69,7 @@ function ha(e) {
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                 ></input></span>
-                 <p className='error'>{formErrors.password}</p>
+                 <p className='error'>{password === "" && formErrors.password}</p>
             </div>
                     <button type="submit" className=" sign btn btn-primary" >Sign in</button>
 
