@@ -10,20 +10,16 @@ function Login() {
     const [email, setMail] = useState("");
     const [password, setPassword] = useState("")
 
-    const [submit,setSubmit]= useState(false);
+    
 const[formErrors, setFormErrors]= useState({})
 function ha(e) {
     e.preventDefault()
-    localStorage.setItem("mail", email)
-    localStorage.setItem("password", password)
+    
     let user={email,password}
     setUsers([...users,user])
-    localStorage.setItem("u",JSON.stringify(users))
-    var c=localStorage.getItem("u")
-    console.log(c)
-    console.log("a")
+    
     setFormErrors(validate(users))
-        setSubmit(true);
+       
 }
     function validate(values){
         const errors={};
@@ -36,15 +32,19 @@ function ha(e) {
             if(!values.password){
                 errors.password= "password required"
                 }
+                if(values.password <4){
+                    errors.password = "Password must be atleast of 4 characters"
+                            }
+                             if(values.password >8){
+                                errors.password = "Password cant't be more than  8 characters"
+                            }
+               
                 if(!values.phone){
                     errors.number= "number required"
                 }
                 return errors;
         }
-        useEffect(()=>{if(Object.keys(formErrors).length == 0 && submit){
-
-        }},[formErrors])
-    //const myStyle= {position: "absolute" , top: "40%" ,left: "30%", height: "30rem" ,width: "29rem", backgroundColor: "#f5d020",right: "50%", justifyContent: "center",}
+        
     return (
         <div className='surface'> 
         <div className="reg-box ">

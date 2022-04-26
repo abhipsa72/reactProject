@@ -27,7 +27,8 @@ h1{
 }
 .error{
   color: red;
-  font-size: smaller;
+  font-size: xx-small;
+  margin: 0px;
 }
 input{
     border-top-style: hidden;
@@ -42,6 +43,7 @@ input{
     
     
   }
+  
   ::placeholder {
     color: rgb(105, 145, 205);
   }
@@ -73,4 +75,16 @@ font-weight: bold;
 
   .forgot{
 margin: 10px;
+  }
+  .mail{
+    padding: 10px;
+  }
+  .name{
+    padding: 10px;
+  }
+  .number{
+    padding: 10px;
+  }
+  .password{
+    padding: 10px;
   }
